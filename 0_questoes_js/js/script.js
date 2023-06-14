@@ -1,18 +1,18 @@
 console.log("questão 1")
-//RESOLVIDO
+
 //Faça um script que verifique se uma letra digitada num campo de input é vogal ou consoante.
 
 var vogais = ["a","e","i","o","u"]
 var letra = document.getElementById("input1")
+var result = document.getElementById("result")
 
 function checar(){
  if(letra == "a" || letra == "e" || letra == "i" || letra == "o" || letra == "u"){
-     console.log("vogal")
+     console.log("ok")
  } else {
-     console.log(`${letra} é uma consoante`)
+     
  }
 }
-console.log(typeof letra)
 
 //RESOLVIDO
 console.log("questão 2")
