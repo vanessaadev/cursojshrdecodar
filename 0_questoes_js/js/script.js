@@ -1,14 +1,18 @@
+console.log("questão 1")
+//RESOLVIDO
 //Faça um script que verifique se uma letra digitada num campo de input é vogal ou consoante.
 
 var vogais = ["a","e","i","o","u"]
-var mostravogal = 0;
-var letra = "e"
+var letra = document.getElementById("input1")
 
-if(letra == vogais.length){
-    console.log("vogal")
-} else {
-    console.log("consoante")
+function checar(){
+ if(letra == "a" || letra == "e" || letra == "i" || letra == "o" || letra == "u"){
+     console.log("vogal")
+ } else {
+     console.log(`${letra} é uma consoante`)
+ }
 }
+console.log(typeof letra)
 
 //RESOLVIDO
 console.log("questão 2")
@@ -33,15 +37,24 @@ if(media >= 7 && media < 10){
 }
 
 
+//RESOLVIDO
 console.log("questão 3")
 /*
 faça um script  que leia três numeros inteiros e mostre o maior deles
 */
 
 var num1 = 12
-var num2 = 10
+var num2 = 20
 var num3 = 15
-var maior = 0
+var maior = num1
+
+if(num2 > maior){
+    maior = num2
+} else if (num3 > maior) {
+    maior = num3
+} 
+
+console.log(maior)
 
 
 console.log("questão 4")
@@ -57,8 +70,32 @@ console.log(`fazendo a inversão de valores o primeiro número será ${novonum1}
 
 
 
+
+//RESOLVIDO
 console.log("questão 5")
 /*faça um script que leia trÊs números inteiros, em seguida mostre o maior e o menor das variáveis.*/
+var num1 = 10
+var num2 = 5
+var num3 = 15
+var maior = num1
+var menor = num1
+
+if(num2 > maior){
+    maior = num2
+} else if(num3 > maior){
+    maior = num3
+}
+
+if(num2 < menor){
+    menor = num2
+} else if(num3 < menor){
+    menor = num3
+}
+
+console.log(maior)
+console.log(menor)
+
+
 
 console.log("questão 6")
 /*faça um script que leia três números e mostre-os em ordem descrescente */
@@ -89,4 +126,4 @@ if(turno == "m-matutino"){
 }
 
 console.log("questão 8")
-/*  fazer depois*/
+/*  fazer depois POIS É MUTIO EXTENSO*/
